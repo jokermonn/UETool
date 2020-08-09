@@ -159,23 +159,41 @@
             android:src="@mipmap/ic_launcher" />
 
         <Button
-            android:id="@+id/btn_show_stub"
+            android:id="@+id/btn_show_stub1"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:onClick="onClick"
-            android:text="show view stub"
+            android:text="show view stub1"
             android:textAllCaps="false"
             tools:ignore="HardcodedText" />
 
         <ViewStub
-            android:id="@+id/view_stub"
+            android:id="@+id/view_stub1"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="10dp"
-            android:inflatedId="@+id/view_stub_inflate"
-            android:layout="@layout/view_stub_layout" />
+            android:inflatedId="@+id/view_stub1_inflate"
+            android:layout="@layout/view_stub1_layout" />
+
+        <Button
+            android:id="@+id/btn_show_stub2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="show view stub1"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <ViewStub
+            android:id="@+id/view_stub2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:layout="@layout/view_stub2_layout" />
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/drawee_view"

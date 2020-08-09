@@ -1,6 +1,7 @@
 package me.ele.uetool.sample;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
@@ -75,7 +76,7 @@ public class XmlLancet {
     }
 
     private static String getResourceName(View view, int resourceId) {
-        String resourceName = view.getResources().getResourceName(resourceId) + ".xml";
+        String resourceName = view.getContext().getResources().getResourceName(resourceId) + ".xml";
         String[] splits = resourceName.split("/");
         if (splits.length == 2) {
             return splits[1];

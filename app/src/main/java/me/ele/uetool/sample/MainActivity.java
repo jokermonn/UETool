@@ -61,11 +61,20 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn4:
                 startActivity(new Intent(this, RecyclerViewActivity.class));
                 break;
-            case R.id.btn_show_stub:
-                ((ViewStub) findViewById(R.id.view_stub)).inflate();
+            case R.id.btn_show_stub1:
+                ((ViewStub) findViewById(R.id.view_stub1)).inflate();
+                break;
+            case R.id.btn_show_stub1_child:
+                ((ViewStub) findViewById(R.id.view_stub1_child)).inflate();
                 break;
             case R.id.btn_show_stub2:
-                ((ViewStub) findViewById(R.id.view_stub2)).inflate();
+                View viewStub2 = ((ViewStub) findViewById(R.id.view_stub2)).inflate();
+                viewStub2.findViewById(R.id.view_stub2_container).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
                 break;
         }
     }
